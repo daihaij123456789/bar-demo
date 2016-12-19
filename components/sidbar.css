@@ -1,0 +1,24 @@
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+#sidbar{
+	width: 35px;
+	padding-top: 200px;
+	position: fixed;
+	min-height: 100%;
+
+}
+.itme{
+	font-size: 12px;
+	font-family: 'Microsoft YaHei';
+	text-align: center;
+	margin-top: 5px;
+}
+#closeBar{
+	position: absolute;
+	bottom: 30px;
+	width: 30px;
+	text-align: center;
+	cursor: pointer;
+}

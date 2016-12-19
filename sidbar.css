@@ -1,0 +1,146 @@
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+#sidbar{
+	width: 35px;
+	background-color: #e1e1e1;
+	padding-top: 100px;
+	position: fixed;
+	min-height: 100%;
+	z-index: 100;
+
+}
+.itme{
+	font-size: 12px;
+	font-family: 'Microsoft YaHei';
+	text-align: center;
+	margin-top: 15px;
+}
+#closeBar{
+	position: absolute;
+	bottom: 10px;
+	width: 35px;
+	text-align: center;
+	cursor: pointer;
+}
+.nav-content{
+	width: 600px;
+	position: fixed;
+	min-height: 100%;
+	border: 1px solid black;
+	z-index: 99;
+	background-color: #e1e1e1;
+	opacity: 0;
+
+}
+h3{
+	text-align:center;
+}
+.nav-con-close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+}
+.sidbar-move-left{
+	animation-name: sml;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes sml{
+	from {
+		
+	}to {
+		transform: translateX(-120px)
+	}
+}
+.closebar-move-right{
+	animation-name: cmr;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes cmr{
+	from {
+		
+	}to {
+		transform: translateX(160px) rotate(405deg) scale(1.5);
+		
+
+	}
+}
+
+.sidbar-move-right{
+	animation-name: smr;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes smr{
+	from {
+		
+	}to {
+		transform: translateX(120px)
+	}
+}
+.closebar-move-left{
+	animation-name: cml;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes cml{
+	from {
+		transform:scale(1.5)
+	}to {
+		transform: translateX(-160px) rotate(-405deg) scale(1);
+		
+
+	}
+}
+.menuContent-move-right{
+	animation-name: mmr;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes mmr{
+	from {
+		opacity: 0;
+	}to {
+		opacity: 1;
+		transform: translateX(120px);
+	}
+}
+.menuContent-move-left{
+	animation-name: mml;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes mml{
+	from {
+		opacity: 1;
+	}to {
+		opacity: 0;
+		transform: translateX(-120px);
+	}
+}
+.menuContent-move-up{
+	animation-name: mmu;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes mmu{
+	from {
+		opacity: 0;
+	}to {
+		opacity: 1;
+		transform: translateY(-250px);
+	}
+}
